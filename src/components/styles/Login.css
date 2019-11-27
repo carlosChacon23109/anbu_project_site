@@ -1,0 +1,215 @@
+body {
+    background-image: url(../images/login/background_login.jpg);
+    background-size:cover;
+}
+
+
+
+.container-login {
+    background: #f2f2f2;
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(2 , minmax(100px,400px));
+    grid-template-rows: repeat(6 , 50px);
+    background:   #212f3d ;
+    border: 5px solid black;
+    width: 50%;
+    margin-left:25%;
+    margin-top: 15%;
+    padding: 20px;
+    border-radius: 30px;
+    opacity: .96;
+}
+/*TITULO PRINCIPAL DEL LOGIN*/
+.title-login{
+    grid-column-start: span 2;
+    display:flex;
+    justify-content: center;
+    font-family: "njnaruto";
+    font-size: 50px;
+    color : white;
+}
+
+/* TITULO DE LOGIN  - CONFIGURABLE */
+#sub-login-title{
+   display: flex;
+   justify-content: center;
+   grid-column-start: span 2; 
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color : white;
+}
+#nickname {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    grid-column-start: span 2;
+    height: 70%;
+    width: 100%;
+    color:white;
+}
+#nickname input {
+    border-radius: 60px;
+    width: 60%;
+    margin-left: 8px;
+    letter-spacing: 3px;
+    padding: 7px;
+}
+#password input {
+    border-radius: 60px;
+    width: 60%;
+    margin-left: 8px;
+    letter-spacing: 3px;
+    padding: 7px;
+}
+#password {
+    display: flex;
+    grid-column-start: span 2;
+    justify-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+    color:white;
+}
+
+
+/* CONFIGURACION DE ESTILOS DEL BOTON DE LOGIN */
+#buttom_login{
+    display: flex;
+    justify-content: center;
+    grid-column-start: span 2;
+    width: 100%;
+}
+#buttom_login input {
+    width: 20%;
+    height: 100%;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    background:   #073d62 ;
+    /* background: linear-gradient(180deg, #073d62, #2371a7); */
+    cursor:pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    color : white;
+    border:3px solid white;
+}
+#buttom_login :hover {
+    /* background: linear-gradient(0deg, #073d62, #2371a7); */
+    background: #81b7dd;
+    color:black;
+    border:3px solid white;
+}
+
+/* CONFIGURACION DEL REGISTRO NUEVO */
+#register-new{
+    grid-row-start: span 6;
+    grid-column-start : 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#register-new a {
+    text-decoration: none;
+    height: 50%;
+    margin: 0;
+    align-self: center;
+    color : white;
+    /* font-weight: bold; */
+    letter-spacing: 1px;
+    font-family: bitWonder;
+    font-size: 11px;
+}
+#register-new :hover {
+    color:gray;
+}
+/* CONFIGURACION DE RESPONSIVE DESIGNE */
+/* ------------------MEDIDAS ESTANDAR  (1024 - 768 - 480 - 320 )*/
+@media screen and (max-width: 768px){
+    #buttom_login {
+        font-size: 13px;
+    }
+    #buttom_login input {
+        font-size: 1em;
+        width: 30%;
+    }
+    /* CONFIGURACION DEL LINK DE REGISTRO RESPONSIVO */
+    #register-new{
+        font-size: 10px;
+        grid-column-start : 1;
+        grid-column-end: 3;
+    }
+    #register-new a {
+        font-size: 1em;
+    }
+    /* CONFIGURACION DEL CONTAINER */
+    .container-login {
+        width: 50%;
+        margin-left: 22%;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    /* CONFIGURACION DEL BOTON DE LOGIN RESPONSIVO */
+    #buttom_login {
+        font-size: 10px;
+
+    }
+    #buttom_login input {
+        font-size:1em;
+        width: 50%;
+    }
+    /* CONFIGURACION DEL LINK DE REGISTRO RESPONSIVO */
+    #register-new{
+        font-size: 10px;
+        grid-column-start : 1;
+        grid-column-end: 3;
+        
+    }
+    #register-new a {
+        font-size: 1em;
+    }
+    /* CONFIGURACION DEL CONTAINER */
+    .container-login {
+        width: 50%;
+        margin-left: 18%;
+    }
+
+}
+@media screen and (max-width: 320px){
+    /* CONFIGURACION DEL CONTAINER */
+    .container-login {
+        width: 50%;
+        margin-left: 18%;
+    }
+    .title-login{
+        font-size: 38px;
+    }
+    #sub-login-title{
+        font-size:14px;
+    }
+    
+    /* CONFIGURACION DEL BOTON DE LOGIN RESPONSIVO */
+    #buttom_login {
+        font-size: 9px;
+
+    }
+    #buttom_login input {
+        font-size:1em;
+        width: 50%;
+    }
+    /* CONFIGURACION DEL LINK DE REGISTRO RESPONSIVO */
+    #register-new{
+        font-size: 8px;
+        grid-column-start : 1;
+        grid-column-end: 3;
+        
+    }
+    #register-new a {
+        font-size: 1em;
+    }
+
+}
