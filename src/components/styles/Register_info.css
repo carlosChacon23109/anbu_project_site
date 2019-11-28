@@ -6,12 +6,13 @@
     /* grid-auto-rows: 40px; */
     grid-template-rows: repeat(10, 40px) 67px;
     grid-template-columns: 100%;
-    background: gray;
+    background: #cedbe3;
     /* border-radius: 20px; */
     /* box-shadow: black 2px 2px 2px 2px; */
     border: dimgray solid 1px;
     margin: 0;
     padding-left: 20px;
+    padding-bottom: 8px;
 }
 .user-data form {
     margin: 0;
@@ -28,4 +29,21 @@
 .container-register_info {
     margin: 0;
     padding: 0;
+}
+
+/* REGLAS DEL REGISTRO DE CREDENCIALES */
+.user-data-credential {
+    display:grid;
+    justify-content: center;
+    /* justify-items: center; */
+    /* grid-auto-rows: 40px; */
+    grid-template-rows: repeat(5, 40px);
+    grid-template-columns: 100%;
+    background: #cedbe3;
+    /* border-radius: 20px; */
+    /* box-shadow: black 2px 2px 2px 2px; */
+    border: dimgray solid 1px;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 8px;
 }

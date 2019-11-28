@@ -1,6 +1,6 @@
 /* CONFIGURACION DE REGLAS DEL REGISTER BASE  */
 .container-register {
-    background-color:red;
+    /* background-color:red; */
     width: 100%;
     height: 100%;
     margin: 0;
@@ -10,7 +10,7 @@
     grid-template-rows: repeat(4, 25%);
     /* justify-content: center; */
     /* justify-items: center; */
-    grid-template-areas: "a a a a"
+    grid-template-areas: "b a a d"
                          "b c c d"
                          "b c c d"
                          "b e e d";
@@ -20,10 +20,14 @@
     margin:0;
     padding: 0;
     text-align: center;
+    font-size: 25px;
+    /* background: green; */
+    width: 100%;
 }
 .title-register {
     grid-area: a;
-    background: blue;
+    background: #89a9bf;
+    width: 100%;
 }
 /* FORMULARIO CREDENCIALES DE USUARIO */
 .credential-user {
@@ -41,7 +45,8 @@ body {
     display:flex;
     text-align: center;
     justify-content: center;
-    background: yellow;
+    background: #89a9bf;
+    border:1px solid dimgray;
 }
 .button-area input {
 
@@ -50,4 +55,7 @@ body {
 .container-transition {
     grid-area: c;
 }
+
+/* REGLAS PARA REALIZAR EL CAMBIO DE FORMULARIO */
+
 
