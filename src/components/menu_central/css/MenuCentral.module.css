@@ -1,0 +1,39 @@
+.container {
+    background : linear-gradient(to left , #141E30 ,#243B55);
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 400px;
+    grid-template-areas: "a a"
+                         "b c"
+                         "b c"
+                         "d d";
+    grid-template-columns: repeat(2 , 50%);
+    grid-template-rows: repeat(4 , 25%);
+
+}
+
+.menu-items {
+    display: flex;
+    background: linear-gradient(to left, #ff9966, #ff5e62);
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#products {
+    grid-area: b;
+    background-image: url(../../menu_central/src/images/products_collage.jpg);
+    background-size:cover;
+}
+#contact {
+    grid-area: c;
+}
+p {
+    align-self: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}

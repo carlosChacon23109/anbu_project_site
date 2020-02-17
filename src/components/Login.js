@@ -1,6 +1,7 @@
 import React from 'react';
 import "./styles/Login.css";
 import "./styles/Fonts.css";
+import Register from "./Register";
 // IMPORTAR LOS RECURSOS IMG
 
 
@@ -29,7 +30,7 @@ class Login extends React.Component {
                     <input type="submit" value="LOGIN"/>
                 </div>
                 <div id="register-new">
-                    <a href="#">Registrese ahora</a>
+                    <a href="">Registrese ahora</a>
                 </div>
             </div>
         );
