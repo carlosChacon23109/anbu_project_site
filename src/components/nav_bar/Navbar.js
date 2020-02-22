@@ -28,7 +28,12 @@ class Navbar extends React.Component {
     render(){
         const hasActive = this.state.active ? true : false;
         const activeClass = hasActive ? styles['show-navbar'] : styles['hide-navbar'];
-        const clases = styles['navbar-container'] + ' ' + activeClass;
+        var clases = "";
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            clases = styles['navbar-container'] + ' ' + activeClass;    
+        }else{
+            clases = styles['navbar-container'];
+        }
         return (
             <div>
                 <div className={styles['button-hamburguer']}> 
@@ -36,7 +41,7 @@ class Navbar extends React.Component {
                 </div>
 
                 <div className={clases}>
-                    <div className={styles['navbar-items']} id={styles['ico-home']}>ANBU</div>
+                    <div className={styles['navbar-items']} id={styles['ico-home']}>ANBU <br/>series y peliculas</div>
                     <div className={styles['navbar-items']} id={styles['home']}>Home</div>
                     <div className={styles['navbar-items']} id={styles['products']}>Productos</div>
                     <div className={styles['navbar-items']} id={styles['contact']}>Contactenos</div>

@@ -2,10 +2,12 @@
 .navbar-container {
     display: grid;
     grid-template-columns: repeat(10 , 10%);
-    background: red;
+    background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     justify-content: center;
-    height: 50px;
+    height: 80px;
     transition: 2s;
+    box-shadow: 0 2px 2px gray;
+    color: white;
 }
 .navbar-items {
     justify-self: center;
@@ -13,17 +15,23 @@
 }
 #ico-home{
     background: sienna;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    background-image: url(../../nav_bar/res/image/texturas/webb-dark.png);
+    background-size:cover;
+    color: white;
+    text-shadow: 5px 5px 5px black;
 }
 #home{
-    background: blue;
     grid-column-start: 8;
 }
 #products {
-    background: orange;
     grid-column-start: 9;
 }
 #contact {
-    background: purple;
     grid-column-start: 10;
 }
 .show-navbar {
@@ -42,7 +50,7 @@
     display: block;
     /* position: fixed; */
     z-index: 4;
-    /* display: none; */
+    display: none;
 }
 
 
@@ -115,7 +123,7 @@
         grid-column-start: 1;
         grid-row-start: 2;
     }
-    .buttom-hamburguer{
+    .button-hamburguer{
         display: block;
     }
     .show-navbar {
